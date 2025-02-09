@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'rachanaDHub/rachana-maven-docker-agent:v1'
+      image 'mojeshDHub/rachana-maven-docker-agent:v1'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' 
     }
   }
@@ -9,7 +9,7 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        //git branch: 'main', url: 'https://github.com/RachanaVenkat/java-app-cicd.git'
+        //git branch: 'main', url: 'https://github.com/MojeshReddy/Jenkins-Pipeline.git'
       }
     }
     stage('Build and Test') {
@@ -31,7 +31,7 @@ pipeline {
     }
     stage('Build and Push Docker Image') {
       environment {
-        DOCKER_IMAGE = "rachanaDHub/ultimate-cicd:${BUILD_NUMBER}"
+        DOCKER_IMAGE = "mojeshDHub/ultimate-cicd:${BUILD_NUMBER}"
         REGISTRY_CREDENTIALS = credentials('docker-cred')
       }
       steps {
