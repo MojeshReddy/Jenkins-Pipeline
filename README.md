@@ -63,19 +63,7 @@ This repository demonstrates a **CI/CD pipeline** for a Java application using *
 
 ---
 
-## **How to Run the Pipeline**
-1. **Clone the repository:**
-2. **Setup Jenkins and configure webhooks** for auto-triggering builds.
-3. **Ensure SonarQube, Docker, Kubernetes, and Argo CD are properly installed and running.**
-4. **Run the pipeline manually or commit new changes** to trigger Jenkins.
-
----
-
-## **Conclusion**
-This **CI/CD pipeline** automates the entire process from **code integration to deployment**, ensuring:
-✅ Faster development cycles 
-✅ Improved code quality 
-✅ Seamless deployment & scaling 
+ 
 
 
 
