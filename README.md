@@ -1,6 +1,5 @@
 # Complete CI/CD pipeline for a Java application, using Maven, SonarQube, Argo CD, Docker and Kubernetes
 
-![image](https://github.com/RachanaVenkat/java-app-cicd/assets/151712438/df08e8f3-a2e1-4c0b-b99c-588801983055)
 
 CI stands for Continuous Integration and CD stands for Continuous Delivery/Deployment. It is the process of automating the integration of code changes from different sources to a single codebase and testing if it is deployable, followed by deploying for the end-users.
 
